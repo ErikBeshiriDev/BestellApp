@@ -1,0 +1,19 @@
+.profile_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 80%;
+    border-radius: 50%;
+}
+
+.restaurant_info {
+    
+}
