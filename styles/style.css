@@ -1,9 +1,20 @@
+.profile_zone {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+}
+
 .profile_images {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     bottom: 50px;
+}
+
+.profile_text {
+    align-self: center;
 }
 
 .logo {
@@ -15,5 +26,58 @@
 }
 
 .restaurant_info {
-    
+    padding: 26px;
+}
+
+.star_rating {
+    padding: 4px 5px;
+    background-color: #F4F0ED;
+}
+
+.all_meals {
+    margin-bottom: 25px;
+}
+
+#meal_component {
+    display: flex;
+    flex-direction: row;
+    height: 125px;
+    width: 715px;
+    margin-bottom: 25px;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 12px;
+    background-color: rgb(238, 237, 235);
+    /* background-color: rgb(69, 124, 212); */
+    /* margin-bottom: 100px; */
+}
+
+.meal_component img {
+    height: 221px;
+    width: 207px;
+    border-radius: 12px;
+}
+
+.meal_component_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.meal_component_text_top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal_component_button {
+    height: 29px;
+    width: 115px;
+    /* padding: 5px 8px; */
+    /* margin: 5px 8px; */
+    /* position: fixed; */
+    border-radius: 120px;
+    background-color: white;
+    align-self: self-end;
 }
