@@ -34,6 +34,26 @@
     background-color: #F4F0ED;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.your_basket_zone {
+    margin-top: 66px;
+    background-color: #726D6D;
+    height: 794px;
+    width: 435px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.meals_zone {
+    margin-bottom: 25px;
+    margin-left: 119px;
+}
+
 .all_meals {
     margin-bottom: 25px;
 }
