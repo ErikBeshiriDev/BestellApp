@@ -15,6 +15,43 @@
 
 .profile_text {
     align-self: center;
+    /* height: 104px; */
+    /* width: 872px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+    /* ---------------------------------------------------------------------- */
+    /* height: 104px; */
+    /* width: 872px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+}
+
+.profile_text_first_line {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+}
+
+.star_rating_zone {
+    height: 32px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 8px; */
+    /* gap: 25px; */
+    margin-left: 25px;
+    background-color: #f4f0ed;
+}
+
+.star_rating_zone img {
+    padding: 4px 5px;
 }
 
 .logo {
@@ -49,12 +86,82 @@ main {
     border-bottom-left-radius: 16px;
 }
 
+.your_basket_zone h3 {
+    color: #FFFFFF;
+}
+
+.your_basket_informations {
+    height: 676px;
+    /* width: 340px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    /* position: fixed; */
+}
+
+.item_in_the_basket {
+    background-color: #FFFFFF;
+    color: #726D6D;
+    height: 103px;
+    width: 340px;
+    /* display: flex;
+    flex-direction: row; */
+    /* align-content: center; */
+    padding: 8px;
+    margin: 18px;
+    border-radius: 20px;
+}
+
+.meal_name {
+    display: flex;
+    height: 29px;
+    width: 300px;
+}
+
+.number_and_price_of_individual_ordered_meals {
+    height: 29px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* gap: 15px; */
+}
+
+.number_of_individual_ordered_meals {
+    overflow-clip-margin: unset;
+    overflow: visible;
+    color: #363534;
+    margin: 24px;
+    display: flex;
+    /* flex-direction: row; */
+
+}
+
+.number_of_individual_ordered_meals img {
+    /* height: 18px; */
+    width: 16px;
+    object-fit: contain;
+}
+
+.price_of_individual_ordered_meals {
+    align-items: flex-end;
+}
+
 .meals_zone {
     margin-bottom: 25px;
     margin-left: 119px;
 }
 
-.all_meals {
+#all_meals {
+    color: #363534;
     margin-bottom: 25px;
 }
 
