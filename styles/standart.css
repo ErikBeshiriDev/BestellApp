@@ -1,17 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    /* font-family: "Palanquin", "Palaquin Dark"sans-serif, serif; */
-    font-family: "Palanquin";
+    font-family: "Palanquin", sans-serif, serif;
     scroll-behavior: smooth;
 }
 
-/* html {
-    max-width: 1440px;
-} */
-
 h1,h2 {
     color: #5E5E5D;
+}
+
+h1 {
+    font-family: "Palanquin Dark";
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
 }
 
 h3 {
@@ -26,7 +31,6 @@ header {
 }
 
 .header_img {
-    /* margin-top: 60px; */
     height: 508px;
     width: 100%;
 }

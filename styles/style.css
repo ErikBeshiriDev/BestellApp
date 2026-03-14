@@ -15,26 +15,10 @@
 
 .profile_text {
     align-self: center;
-    /* height: 104px; */
-    /* width: 872px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-self: center; */
-    /* ---------------------------------------------------------------------- */
-    /* height: 104px; */
-    /* width: 872px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-self: center; */
 }
 
 .profile_text_first_line {
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
 }
 
@@ -44,8 +28,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 8px; */
-    /* gap: 25px; */
     margin-left: 25px;
     background-color: #f4f0ed;
 }
@@ -71,89 +53,22 @@
     background-color: #F4F0ED;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.star_rating_the_star_number {
+    font-family: "Palanquin Dark";
+    font-weight: 400;
 }
 
-.your_basket_zone {
-    margin-top: 66px;
-    background-color: #726D6D;
-    height: 794px;
-    width: 435px;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
+.star_rating_the_rating_number {
+    font-family: "Palanquin";
+    font-weight: 400;
 }
 
-.your_basket_zone h3 {
-    color: #FFFFFF;
+.profile_restaurant_description_sentence {
+    font-family: "Palanquin Dark";
+    font-weight: 700;
 }
 
-.your_basket_informations {
-    height: 676px;
-    /* width: 340px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    /* position: fixed; */
-}
-
-.item_in_the_basket {
-    background-color: #FFFFFF;
-    color: #726D6D;
-    height: 103px;
-    width: 340px;
-    /* display: flex;
-    flex-direction: row; */
-    /* align-content: center; */
-    padding: 8px;
-    margin: 18px;
-    border-radius: 20px;
-}
-
-.meal_name {
-    display: flex;
-    height: 29px;
-    width: 300px;
-}
-
-.number_and_price_of_individual_ordered_meals {
-    height: 29px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* width: 100%; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: row; */
-    /* flex-direction: column; */
-    /* gap: 15px; */
-}
-
-.number_of_individual_ordered_meals {
-    overflow-clip-margin: unset;
-    overflow: visible;
-    color: #363534;
-    margin: 24px;
-    display: flex;
-    /* flex-direction: row; */
-
-}
-
-.number_of_individual_ordered_meals img {
-    /* height: 18px; */
-    width: 16px;
-    object-fit: contain;
-}
-
-.price_of_individual_ordered_meals {
-    align-items: flex-end;
-}
+/* ------------------------------------------------------------------- */
 
 .meals_zone {
     margin-bottom: 25px;
@@ -175,8 +90,6 @@ main {
     gap: 10px;
     border-radius: 12px;
     background-color: rgb(238, 237, 235);
-    /* background-color: rgb(69, 124, 212); */
-    /* margin-bottom: 100px; */
 }
 
 .meal_component img {
@@ -192,19 +105,115 @@ main {
 }
 
 .meal_component_text_top {
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 600;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.meal_component_restaurant_description_sentence {
+    font-family: "Palanquin";
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .meal_component_button {
     height: 29px;
     width: 115px;
-    /* padding: 5px 8px; */
-    /* margin: 5px 8px; */
-    /* position: fixed; */
     border-radius: 120px;
     background-color: white;
     align-self: self-end;
+}
+
+/* ------------------------------------------------------------------- */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.your_basket_zone {
+    font-family: "Palanquin";
+    margin-top: 66px;
+    background-color: #726D6D;
+    height: 794px;
+    width: 435px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.your_basket_zone h3 {
+    color: #FFFFFF;
+}
+
+.your_basket_zone h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.your_basket_informations {
+    height: 676px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.item_in_the_basket {
+    background-color: #FFFFFF;
+    color: #726D6D;
+    height: 103px;
+    width: 340px;
+    padding: 8px 16px;
+    margin: 18px;
+    border-radius: 20px;
+}
+
+.meal_name {
+    font-family: "Palanquin";
+    font-weight: bold;
+    display: flex;
+    height: 30px;
+    width: 100%;
+}
+
+.number_and_price_of_individual_ordered_meals {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number_of_individual_ordered_meals {
+    font-size: 24px;
+    font-weight: 600;
+    overflow-clip-margin: unset;
+    overflow: visible;
+    color: #363534;
+    display: flex;
+}
+
+.number_of_individual_ordered_meals img {
+    width: 16px;
+    object-fit: contain;
+}
+
+.price_of_individual_ordered_meals {
+    font-size: 22px;
+    font-weight: 700;
+    align-items: flex-end;
+}
+
+.scroll_button {
+    background-color: #E6E5E5;
+    height: 60px;
+    width: 6px;
+    border-radius: 30px;
 }
