@@ -75,9 +75,18 @@
     margin-left: 119px;
 }
 
-#all_meals {
+.all_meals {
     color: #363534;
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.all_meals_categorys {
+    color: #363534;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 #meal_component {
@@ -85,7 +94,6 @@
     flex-direction: row;
     height: 125px;
     width: 715px;
-    margin-bottom: 25px;
     padding: 15px;
     gap: 10px;
     border-radius: 12px;
