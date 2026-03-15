@@ -5,7 +5,8 @@ body {
     scroll-behavior: smooth;
 }
 
-h1,h2 {
+h1,
+h2 {
     color: #5E5E5D;
 }
 
@@ -20,13 +21,26 @@ h2 {
 }
 
 h3 {
-  all: unset;
+    all: unset;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    unicode-bidi: normal;
 }
 
 header {
+    top: 0;
     height: 128px;
     width: 100%;
-    padding: 16px 8px;
+    padding: 0px 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
     background-color: #726D6D;
 }
 
@@ -38,7 +52,7 @@ header {
 footer {
     height: 128px;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     padding: 16px 8px;
     background-color: #726D6D;
 }
