@@ -42,7 +42,8 @@ header {
     align-items: center;
     margin-bottom: 50px;
     color: white;
-    background-color: #726D6D;
+    /* background-color: #726D6D; */
+    background-color: #E76C1F;
     font-size: 30px;
     font-weight: 700;
 }
@@ -61,7 +62,8 @@ header {
 footer {
     height: 128px;
     width: 100%;
-    background-color: #726D6D;
+    /* background-color: #726D6D; */
+    background-color: #E76C1F;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;

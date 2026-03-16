@@ -97,7 +97,8 @@
     padding: 15px;
     gap: 10px;
     border-radius: 12px;
-    background-color: rgb(238, 237, 235);
+    /* background-color: rgb(238, 237, 235); */
+    background-color: #FDEADC;
 }
 
 .meal_component img {
