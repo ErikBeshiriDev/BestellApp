@@ -82,6 +82,14 @@
     gap: 48px;
 }
 
+.burger_headline {
+    height: 60px;
+    background-color: #E76C1F;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 .all_meals_categorys {
     color: #363534;
     display: flex;
@@ -89,7 +97,7 @@
     gap: 25px;
 }
 
-#meal_component {
+.meal_component {
     display: flex;
     flex-direction: row;
     height: 125px;
@@ -102,10 +110,38 @@
 }
 
 .meal_component img {
-    height: 221px;
-    width: 207px;
+    padding: 0;
     border-radius: 12px;
+    object-fit: cover;
 }
+
+/* .meal_component img {
+    overflow-clip-margin: 0;
+    overflow: visible;
+    height: 221px;
+    height: 125;
+    width: 125;
+    padding: 0;
+    width: 207px;
+    height: auto;
+    width: 260;
+
+    border-radius: 12px;
+    object-fit: cover;
+} */
+
+/* .meal_component_img { */
+/* overflow-clip-margin: 0; */
+/* overflow: visible; */
+/* height: 221px; */
+/* width: 207px; */
+/* height: 125px; */
+/* width: 125px; */
+/* border-radius: 12px; */
+
+/* height: 125px; */
+/* width: 125px; */
+/* } */
 
 .meal_component_text {
     width: 100%;
