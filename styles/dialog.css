@@ -1,0 +1,73 @@
+.dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(181, 180, 180, 0.5);
+    z-index: 1000;
+}
+
+/* dialog:not([open]) {
+    display: none;
+} */
+
+.order_confirmed_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 269px;
+    width: 415px;
+    border-radius: 30px;
+    background-color: #363534;
+    color: white;    
+
+    /* background: white; */
+    padding: 20px;
+    /* border-radius: 12px; */
+
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
+    /* ????????????????? */
+    
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* width: 300px; */
+    position: relative;
+}
+
+.order_confirmed_box button { 
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    /* color: #333; */
+}
+
+.order_confirmed_box img {
+    height: 57px;
+    width: 80px;
+    /* border-radius: 8px; */
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.order_confirmed_box_text_zone {
+    text-align: center;
+}
+
+.order_confirmed_box_text_zone_line_1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.order_confirmed_box_text_zone_line_2 {
+    font-size: 29px;
+    font-weight: 700;
+}

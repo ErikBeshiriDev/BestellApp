@@ -195,11 +195,13 @@ main {
     width: 100%;
     /* left: -24px; */
     position: relative;
+    /* max-width: 1440px; */
 }
 
 .your_basket_zone {
     font-family: "Palanquin";
     background-color: #726D6D;
+    height: 885px;
     width: 435px;
     display: flex;
     border-top-left-radius: 16px;
