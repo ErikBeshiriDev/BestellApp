@@ -12,44 +12,52 @@
 
 <body>
     <header>
-        <p>LOGO</p>
-        <img src="./img/png/dehaze.png" class="header_dehaze_img" alt="">
+        <div class="header_inner">
+            <p>LOGO</p>
+            <img src="./img/png/dehaze.png" class="header_dehaze_img" alt="">
+        </div>
     </header>
 
-    <div class="profile_zone">
-        <div class="profile_images">
-            <!-- <img class="header_img" src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="header picture"> -->
-            <img class="profile_img" src="./img/png/hero.png" alt="header picture">
-            <!-- <img class="profile_logo" src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="restaurant logo"> -->
-            <img class="profile_logo" src="./img/png/logo.png" alt="restaurant logo">
-        </div>
+    <main>
 
-        <div class="profile_text">
-            <div class="profile_text_first_line">
-                <h1>Restaurant Name</h1>
-                <div class="star_rating_zone">
-                    <img src="./img/png/star.png" alt="">
-                    <p class="star_rating_the_star_number">4,1</p>
-                    <br>
-                    <p class="star_rating_the_rating_number">(317)</p>
+        <section class="hero_section">
+            <div class="hero_profile_images">
+                <img class="hero_big_img" src="./img/png/hero.png" alt="header picture">
+                <img class="hero_profile_logo" src="./img/png/logo.png" alt="restaurant logo">
+            </div>
+            <div class="profile_zone">
+                <div class="profile_text">
+                    <div class="profile_text_first_line">
+                        <h1>Restaurant Name</h1>
+                        <div class="star_rating_zone">
+                            <img src="./img/png/star.png" alt="">
+                            <p class="star_rating_the_star_number">4,1</p>
+                            <br>
+                            <p class="star_rating_the_rating_number">(317)</p>
+                        </div>
+                    </div>
+                    <p class="profile_restaurant_description_sentence">
+                        Short description, what kind of restaurant this is it.
+                    </p>
                 </div>
             </div>
-            <p class="profile_restaurant_description_sentence">Short description, what kind of restaurant this is it.
-            </p>
-        </div>
-    </div>
-    <main>
-        <div class="meals_zone">
-            <h2>Category name</h2>
+        </section>
 
-            <div class="burger_headline burger_headline_margin_bottom">
-                <img src="./img/png/Chanese 1.png" alt="">
-                <div>Burger & Sandwiches</div>
-            </div>
+        <div class="content_wrapper">
 
-            <div class="all_meals">
+            <section class="all_meals">
 
-                <div class="all_meals_categorys">
+                <h2>Category name</h2>
+
+                <div class="burger_headline burger_headline_margin_bottom">
+                    <div class="headline_inner">
+                        <img src="./img/png/Chanese 1.png" alt="Icon">
+                        <div>Burger & Sandwiches</div>
+                    </div>
+                </div>
+
+                <div class="meal_categorys">
+
                     <div class="meal_component" id="meal_component">
                         <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
                         <img src="./img/jpg/20a7eaeaf9448f7646a276909cdccb541ad1dc69.jpg" alt="meal picture">
@@ -58,7 +66,9 @@
                                 <h3>Name</h3>
                                 <h3>Price€</h3>
                             </div>
-                            <p class="meal_component_restaurant_description_sentence">Short description about the
+                            <p class="meal_component_restaurant_description_sentence">Short description
+                                about
+                                the
                                 ingredients</p>
                             <button class="meal_component_button">Add to basket</button>
                         </div>
@@ -101,192 +111,212 @@
                             <p>Short description about the ingredients</p>
                             <button class="meal_component_button">Add to basket</button>
                         </div>
+
                     </div>
+
                 </div>
 
                 <div class="burger_headline burger_headline_margin_top burger_headline_margin_bottom">
-                    <img src="./img/png/Pizza 1.png" alt="">
-                    <div>Pizza (30 cm)</div>
+                    <div class="headline_inner">
+                        <img src="./img/png/Pizza 1.png" alt="">
+                        <div>Pizza (30 cm)</div>
+                    </div>
                 </div>
 
-                <div class="all_meals_categorys">
-                    <div class="meal_component" id="meal_component">
-                        <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
-                        <img src="./img/jpg/487725d828f9674f9c1043f55b4da16a5a9720ac.jpg" alt="meal picture">
-                        <div class="meal_component_text">
-                            <div class="meal_component_text_top">
-                                <h3>Name</h3>
-                                <h3>Price€</h3>
+                <div class="meal_categorys">
+
+                    <div class="content_wrapper">
+
+                        <div class="meal_component" id="meal_component">
+                            <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
+                            <img src="./img/jpg/487725d828f9674f9c1043f55b4da16a5a9720ac.jpg" alt="meal picture">
+                            <div class="meal_component_text">
+                                <div class="meal_component_text_top">
+                                    <h3>Name</h3>
+                                    <h3>Price€</h3>
+                                </div>
+                                <p>Short description about the ingredients</p>
+                                <button class="meal_component_button">Add to basket</button>
                             </div>
-                            <p>Short description about the ingredients</p>
-                            <button class="meal_component_button">Add to basket</button>
                         </div>
+
+                        <div class="meal_component" id="meal_component">
+                            <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
+                            <img src="./img/jpg/a7fa5eafaf73dbf01265a3e7693f15a654b975c0.jpg" alt="meal picture">
+                            <div class="meal_component_text">
+                                <div class="meal_component_text_top">
+                                    <h3>Name</h3>
+                                    <h3>Price€</h3>
+                                </div>
+                                <p>Short description about the ingredients</p>
+                                <button class="meal_component_button">Add to basket</button>
+                            </div>
+                        </div>
+
+                        <div class="meal_component" id="meal_component">
+                            <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
+                            <img src="./img/jpg/55936ccab53e78ddd9b5333f2efdcc147a7d732f.jpg" alt="meal picture">
+                            <div class="meal_component_text">
+                                <div class="meal_component_text_top">
+                                    <h3>Name</h3>
+                                    <h3>Price€</h3>
+                                </div>
+                                <p>Short description about the ingredients</p>
+                                <button class="meal_component_button">Add to basket</button>
+                            </div>
+                        </div>
+
+                        <div class="meal_component" id="meal_component">
+                            <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
+                            <img src="./img/jpg/3624ab8bf800591e608d2b3a1f237314063fcc1d.jpg" alt="meal picture">
+                            <div class="meal_component_text">
+                                <div class="meal_component_text_top">
+                                    <h3>Name</h3>
+                                    <h3>Price€</h3>
+                                </div>
+                                <p>Short description about the ingredients</p>
+                                <button class="meal_component_button">Add to basket</button>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="meal_component" id="meal_component">
-                        <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
-                        <img src="./img/jpg/a7fa5eafaf73dbf01265a3e7693f15a654b975c0.jpg" alt="meal picture">
-                        <div class="meal_component_text">
-                            <div class="meal_component_text_top">
-                                <h3>Name</h3>
-                                <h3>Price€</h3>
-                            </div>
-                            <p>Short description about the ingredients</p>
-                            <button class="meal_component_button">Add to basket</button>
-                        </div>
-                    </div>
-
-                    <div class="meal_component" id="meal_component">
-                        <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
-                        <img src="./img/jpg/55936ccab53e78ddd9b5333f2efdcc147a7d732f.jpg" alt="meal picture">
-                        <div class="meal_component_text">
-                            <div class="meal_component_text_top">
-                                <h3>Name</h3>
-                                <h3>Price€</h3>
-                            </div>
-                            <p>Short description about the ingredients</p>
-                            <button class="meal_component_button">Add to basket</button>
-                        </div>
-                    </div>
-
-                    <div class="meal_component" id="meal_component">
-                        <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
-                        <img src="./img/jpg/3624ab8bf800591e608d2b3a1f237314063fcc1d.jpg" alt="meal picture">
-                        <div class="meal_component_text">
-                            <div class="meal_component_text_top">
-                                <h3>Name</h3>
-                                <h3>Price€</h3>
-                            </div>
-                            <p>Short description about the ingredients</p>
-                            <button class="meal_component_button">Add to basket</button>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="burger_headline burger_headline_margin_top burger_headline_margin_bottom">
-                    <img src="./img/png/Salad 1.png" alt="">
-                    <div>Salad</div>
-                </div>
-
-                <div class="all_meals_categorys">
-                    <div class="meal_component" id="meal_component">
-                        <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
-                        <img src="./img/jpg/32bcdbcd496b9031f742463f89282d1f13aa4921.jpg" alt="meal picture">
-                        <div class="meal_component_text">
-                            <div class="meal_component_text_top">
-                                <h3>Name</h3>
-                                <h3>Price€</h3>
-                            </div>
-                            <p>Short description about the ingredients</p>
-                            <button class="meal_component_button">Add to basket</button>
-                        </div>
-                    </div>
-
-                    <div class="meal_component" id="meal_component">
-                        <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
-                        <img src="./img/jpg/1d71a520d4bc2d2acc5d1769f6a2b480557673f2.jpg" alt="meal picture">
-                        <div class="meal_component_text">
-                            <div class="meal_component_text_top">
-                                <h3>Name</h3>
-                                <h3>Price€</h3>
-                            </div>
-                            <p>Short description about the ingredients</p>
-                            <button class="meal_component_button">Add to basket</button>
-                        </div>
-                    </div>
-
-                    <div class="meal_component" id="meal_component">
-                        <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
-                        <img src="./img/jpg/07a3e8b90c516a94c04bc73055106cee45509efa.jpg" alt="meal picture">
-                        <div class="meal_component_text">
-                            <div class="meal_component_text_top">
-                                <h3>Name</h3>
-                                <h3>Price€</h3>
-                            </div>
-                            <p>Short description about the ingredients</p>
-                            <button class="meal_component_button">Add to basket</button>
-                        </div>
-                    </div>
-
-                    <div class="meal_component" id="meal_component">
-                        <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
-                        <img src="./img/jpg/380c5a62dabcc16d5139d53988088c19cf64e61d.jpg" alt="meal picture">
-                        <div class="meal_component_text">
-                            <div class="meal_component_text_top">
-                                <h3>Name</h3>
-                                <h3>Price€</h3>
-                            </div>
-                            <p>Short description about the ingredients</p>
-                            <button class="meal_component_button">Add to basket</button>
-                        </div>
+                    <div class="headline_inner">
+                        <img src="./img/png/Salad 1.png" alt="">
+                        <div>Salad</div>
                     </div>
                 </div>
-            </div>
+
+                <div class="meal_categorys">
+
+                    <div class="content_wrapper">
+
+                        <div class="meal_component" id="meal_component">
+                            <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
+                            <img src="./img/jpg/32bcdbcd496b9031f742463f89282d1f13aa4921.jpg" alt="meal picture">
+                            <div class="meal_component_text">
+                                <div class="meal_component_text_top">
+                                    <h3>Name</h3>
+                                    <h3>Price€</h3>
+                                </div>
+                                <p>Short description about the ingredients</p>
+                                <button class="meal_component_button">Add to basket</button>
+                            </div>
+                        </div>
+
+                        <div class="meal_component" id="meal_component">
+                            <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
+                            <img src="./img/jpg/1d71a520d4bc2d2acc5d1769f6a2b480557673f2.jpg" alt="meal picture">
+                            <div class="meal_component_text">
+                                <div class="meal_component_text_top">
+                                    <h3>Name</h3>
+                                    <h3>Price€</h3>
+                                </div>
+                                <p>Short description about the ingredients</p>
+                                <button class="meal_component_button">Add to basket</button>
+                            </div>
+                        </div>
+
+                        <div class="meal_component" id="meal_component">
+                            <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
+                            <img src="./img/jpg/07a3e8b90c516a94c04bc73055106cee45509efa.jpg" alt="meal picture">
+                            <div class="meal_component_text">
+                                <div class="meal_component_text_top">
+                                    <h3>Name</h3>
+                                    <h3>Price€</h3>
+                                </div>
+                                <p>Short description about the ingredients</p>
+                                <button class="meal_component_button">Add to basket</button>
+                            </div>
+                        </div>
+
+                        <div class="meal_component" id="meal_component">
+                            <!-- <img src="./img/png/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="meal picture"> -->
+                            <img src="./img/jpg/380c5a62dabcc16d5139d53988088c19cf64e61d.jpg" alt="meal picture">
+                            <div class="meal_component_text">
+                                <div class="meal_component_text_top">
+                                    <h3>Name</h3>
+                                    <h3>Price€</h3>
+                                </div>
+                                <p>Short description about the ingredients</p>
+                                <button class="meal_component_button">Add to basket</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <aside class="your_basket_zone">
+                <div class="your_basket_zone_without_the_scroll_button">
+                    <div class="your_basket_informations">
+                        <h3>Your Basket</h3>
+                        <div class="item_in_the_basket">
+                            <p class="meal_name">1 x Meal name</p>
+                            <div class="number_and_price_of_individual_ordered_meals">
+                                <div class="number_of_individual_ordered_meals">
+                                    <img src="./img/png/delete.png" alt="">
+                                    <p>1+</p>
+                                </div>
+                                <p class="price_of_individual_ordered_meals">Price€</p>
+                            </div>
+                        </div>
+
+                        <div class="item_in_the_basket">
+                            <p class="meal_name">1 x Meal name</p>
+                            <div class="number_and_price_of_individual_ordered_meals">
+                                <div class="number_of_individual_ordered_meals">
+                                    <img src="./img/png/delete.png" alt="">
+                                    <p>1+</p>
+                                </div>
+                                <p class="price_of_individual_ordered_meals">Price€</p>
+                            </div>
+                        </div>
+
+                        <div class="item_in_the_basket">
+                            <p class="meal_name">1 x Meal name</p>
+                            <div class="number_and_price_of_individual_ordered_meals">
+                                <div class="number_of_individual_ordered_meals">
+                                    <img src="./img/png/delete.png" alt="">
+                                    <p>1+</p>
+                                </div>
+                                <p class="price_of_individual_ordered_meals">Price€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total_price_zone">
+                        <div class="total_price_zone_above_the_dividing_line">
+                            <div class="total_price_zone_the_text">
+                                <p>Subtotal</p>
+                                <p>36,70</p>
+                            </div>
+                            <div class="total_price_zone_the_text">
+                                <p>Delivery fee</p>
+                                <p>4,99€</p>
+                            </div>
+                        </div>
+                        <div class="total_price_zone_the_dividing_line"></div>
+                        <div class="total_price_zone_the_text total_price_zone_under_the_dividing_line">
+                            <p>Total</p>
+                            <p>Buy now (41,69€)</p>
+                        </div>
+                        <button>Buy now (41,69€)</button>
+                    </div>
+
+                </div>
+                <div class="scroll_button"></div>
+            </aside>
+
         </div>
 
-
-        <div class="your_basket_zone">
-            <div class="your_basket_zone_without_the_scroll_button">
-                <div class="your_basket_informations">
-                    <h3>Your Basket</h3>
-                    <div class="item_in_the_basket">
-                        <p class="meal_name">1 x Meal name</p>
-                        <div class="number_and_price_of_individual_ordered_meals">
-                            <div class="number_of_individual_ordered_meals">
-                                <img src="./img/png/delete.png" alt="">
-                                <p>1+</p>
-                            </div>
-                            <p class="price_of_individual_ordered_meals">Price€</p>
-                        </div>
-                    </div>
-
-                    <div class="item_in_the_basket">
-                        <p class="meal_name">1 x Meal name</p>
-                        <div class="number_and_price_of_individual_ordered_meals">
-                            <div class="number_of_individual_ordered_meals">
-                                <img src="./img/png/delete.png" alt="">
-                                <p>1+</p>
-                            </div>
-                            <p class="price_of_individual_ordered_meals">Price€</p>
-                        </div>
-                    </div>
-
-                    <div class="item_in_the_basket">
-                        <p class="meal_name">1 x Meal name</p>
-                        <div class="number_and_price_of_individual_ordered_meals">
-                            <div class="number_of_individual_ordered_meals">
-                                <img src="./img/png/delete.png" alt="">
-                                <p>1+</p>
-                            </div>
-                            <p class="price_of_individual_ordered_meals">Price€</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="total_price_zone">
-                    <div class="total_price_zone_above_the_dividing_line">
-                        <div class="total_price_zone_the_text">
-                            <p>Subtotal</p>
-                            <p>36,70</p>
-                        </div>
-                        <div class="total_price_zone_the_text">
-                            <p>Delivery fee</p>
-                            <p>4,99€</p>
-                        </div>
-                    </div>
-                    <div class="total_price_zone_the_dividing_line"></div>
-                    <div class="total_price_zone_the_text total_price_zone_under_the_dividing_line">
-                        <p>Total</p>
-                        <p>Buy now (41,69€)</p>
-                    </div>
-                    <button>Buy now (41,69€)</button>
-                </div>
-
-            </div>
-            <div class="scroll_button"></div>
-        </div>
     </main>
 
-    <div class="dialog">
+    <!-- <section class="dialog">
         <div class="order_confirmed_box">
             <button class="close_button">&#x2715;</button>
             <img src="./img/png/ChatGPT Image Nov 24, 2025, 11_51_33 AM 1.png" alt="">
@@ -295,7 +325,7 @@
                 <p class="order_confirmed_box_text_zone_line_2">Your food is on the way!</p>
             </div>
         </div>
-    </div>
+    </section> -->
 
     <footer>
         <div class="footer_copyright_text">

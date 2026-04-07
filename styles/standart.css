@@ -1,9 +1,16 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: "Palanquin", serif;
     /* font-family: "Palanquin", sans-serif, serif; */
     scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* Verhindert seitliches Wackeln */
 }
 
 h1,
@@ -66,12 +73,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     color: white;
     /* background-color: #726D6D; */
     background-color: #E76C1F;
     font-size: 30px;
     font-weight: 700;
+}
+
+header,
+footer {
+    width: 100%;
+    background-color: #E76C1F;
+}
+
+.flex_header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header_section {
+    width: 100%;
+}
+
+.profile_text_first_line {
+    display: flex;
+    align-items: center;
 }
 
 .header_dehaze_img {
@@ -80,19 +108,44 @@ header {
     padding: 12px 8px;
 }
 
-.profile_img {
+.hero_profile_images {
+    position: relative;
+    bottom: 50px;
+}
+
+.profile_text {
+    align-self: center;
+}
+
+.hero_big_img {
     height: 508px;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
 }
 
-.profile_logo {
-    box-shadow: rgba(0, 0, 0, 0.25);
+.hero_profile_logo {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    /* box-shadow: rgba(0, 0, 0, 0.25); */
+
+    /* .hero__companylogo {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    box-sizing: content-box;
+    width: 120px;
+    height: 120px;
+    border: solid var(--color-secondary) 13px;
+    border-radius: 50%; */
 }
 
 footer {
     height: 128px;
-    width: 100%;
     /* background-color: #726D6D; */
     background-color: #E76C1F;
     color: #FFFFFF;
