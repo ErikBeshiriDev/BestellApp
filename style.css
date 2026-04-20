@@ -1,0 +1,222 @@
+.content_wrapper_version_0 {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 max(calc(50% - 720px), 64px); */
+    gap: 20px;
+}
+
+.content_wrapper_version_1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    padding: 0 max(calc(50% - 720px), 64px);
+    gap: 20px;
+}
+
+.content_wrapper_version_2 {
+    padding: 0 max(calc(50% - 720px), 64px);
+    gap: 20px;
+}
+
+/* ------------------------------------------------------------------- */
+
+.hero_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.hero_profile_images {
+    position: relative;
+    bottom: 50px;
+}
+
+.hero_big_img {
+    height: 508px;
+    width: 100%;
+    max-width: 1440px;
+    object-fit: cover;
+}
+
+.hero_profile_logo {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.profile_text {
+    align-self: center;
+    margin-top: 40px;
+}
+
+.profile_text_first_line {
+    display: flex;
+    align-items: center;
+}
+
+.star_rating_zone {
+    height: 32px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    background-color: #f4f0ed;
+}
+
+.star_rating_the_star_number {
+    font-family: "Palanquin Dark";
+    font-weight: 400;
+}
+
+.star_rating_the_rating_number {
+    font-family: "Palanquin";
+    font-weight: 400;
+}
+
+.profile_restaurant_description_sentence {
+    font-family: "Palanquin Dark";
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------------- */
+
+.burger_headline {
+    width: 100%;
+    position: relative;
+    background-color: #e76c1f;
+    color: white;
+}
+
+.headline_inner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* padding-left: 260px; */
+    gap: 15px;
+}
+
+.headline_inner img {
+    height: 30px;
+    width: auto;
+}
+
+.burger_headline_margin_top {
+    margin-top: 48px;
+}
+
+.burger_headline_margin_bottom {
+    margin-bottom: 48px;
+}
+
+.burger_headline.full_width_balken {
+    width: 100%;
+    position: relative;
+}
+
+.all_meals {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.meal_categorys_menu_1 {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 16px;
+}
+
+.meal_categorys_menu_2_and_3 {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    gap: 16px;
+}
+
+/* .meal_category_1 {
+    display: flex;
+    flex-direction: row;
+} */
+
+.meal_component {
+    display: flex;
+    flex-direction: row;
+    height: 125px;
+    width: 713px;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 12px;
+    background-color: #FDEADC;
+}
+
+.meal_component img {
+    padding: 0;
+    height: 125px;
+    width: 84px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.meal_component_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.meal_component_text_top {
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal_component_restaurant_description_sentence {
+    font-family: "Palanquin";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.meal_component_button {
+    height: 29px;
+    width: 115px;
+    border-radius: 120px;
+    background-color: white;
+    align-self: self-end;
+}
+
+/* ------------------------------------------------------------------- */
+
+main {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* .meal_and_basket_content {
+    width: calc(100% - 435px);
+    display: flex;
+} */

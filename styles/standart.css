@@ -66,6 +66,8 @@ button {
     border: none;
 }
 
+/* ------------------------------------------------------------------- */
+
 header {
     top: 0;
     height: 128px;
@@ -97,56 +99,16 @@ footer {
     width: 100%;
 }
 
-.profile_text_first_line {
-    display: flex;
-    align-items: center;
-}
-
 .header_dehaze_img {
     height: 35px;
     width: 45px;
     padding: 12px 8px;
 }
 
-.hero_profile_images {
-    position: relative;
-    bottom: 50px;
-}
-
-.profile_text {
-    align-self: center;
-}
-
-.hero_big_img {
-    height: 508px;
-    width: 100vw;
-    object-fit: cover;
-}
-
-.hero_profile_logo {
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    /* box-shadow: rgba(0, 0, 0, 0.25); */
-
-    /* .hero__companylogo {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    box-sizing: content-box;
-    width: 120px;
-    height: 120px;
-    border: solid var(--color-secondary) 13px;
-    border-radius: 50%; */
-}
+/* ------------------------------------------------------------------- */
 
 footer {
     height: 128px;
-    /* background-color: #726D6D; */
     background-color: #E76C1F;
     color: #FFFFFF;
     font-size: 18px;
@@ -154,6 +116,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     gap: 72px;
 }
 

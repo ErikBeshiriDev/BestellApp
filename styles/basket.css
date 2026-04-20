@@ -1,0 +1,144 @@
+.your_basket_zone {
+    font-family: "Palanquin";
+    background-color: #726D6D;
+    height: 815px;
+    width: 435px;
+    min-width: 435px;
+    color: #fdeadc;
+    position: sticky;
+    border-radius: 16px 0px 0px 16px;
+    /* position: sticky; */
+    /* top: 20px; */
+    /* right: 10px; */
+    /* z-index: 100; */
+}
+
+.your_basket_zone_without_the_scroll_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.your_basket_zone h3 {
+    color: #FFFFFF;
+}
+
+.your_basket_zone h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.your_basket_informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.item_in_the_basket {
+    background-color: #FFFFFF;
+    color: #726D6D;
+    height: 103px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px 16px;
+    margin: 18px;
+    border-radius: 20px;
+}
+
+.meal_name {
+    font-family: "Palanquin";
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    height: 30px;
+    width: 100%;
+}
+
+.number_and_price_of_individual_ordered_meals {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number_of_individual_ordered_meals {
+    font-size: 24px;
+    font-weight: 600;
+    overflow-clip-margin: unset;
+    overflow: visible;
+    color: #363534;
+    display: flex;
+}
+
+.number_of_individual_ordered_meals img {
+    width: 16px;
+    object-fit: contain;
+}
+
+.price_of_individual_ordered_meals {
+    font-size: 22px;
+    font-weight: 700;
+    align-items: flex-end;
+}
+
+/* ------------------------------------------------------------------- */
+
+.total_price_zone {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    gap: 15px;
+}
+
+.total_price_zone_above_the_dividing_line {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.total_price_zone button {
+    width: 320px;
+    color: #FFFFFF;
+    background-color: #E76C1F;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 60px;
+    padding: 10px;
+}
+
+.total_price_zone_the_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.total_price_zone_the_dividing_line {
+    display: flex;
+    height: 3px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    border-width: 2px;
+}
+
+.total_price_zone_under_the_dividing_line {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.scroll_button {
+    background-color: #E6E5E5;
+    height: 60px;
+    width: 6px;
+    border-radius: 30px;
+}
