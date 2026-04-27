@@ -1,10 +1,11 @@
 .content_wrapper_version_0 {
     max-width: 1440px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 calc(1440px - 40px / 2);
     /* padding: 0 max(calc(50% - 720px), 64px); */
     gap: 20px;
 }
@@ -104,7 +105,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    /* padding-left: 260px; */
+    padding-left: 300px;
     gap: 15px;
 }
 
@@ -136,10 +137,10 @@
 
 .meal_categorys_menu_1 {
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: calc(max(100px,(100% - 1400px) / 2));
     gap: 16px;
 }
 
