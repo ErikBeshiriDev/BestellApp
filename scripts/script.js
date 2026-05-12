@@ -6,11 +6,11 @@ function showInformationsOnTheEntireMenu() {
     for (let a = 0; a < menu.length; a++) {
         for (let b = 1; b <= 4; b++) {
 
-            const htmlNameId = `meal-category-${a + 1}-meal-name-${b}`
-            const htmlPriceId = `meal-category-${a + 1}-meal-price-${b}`
+            const htmlNameId = `meal-category-${a + 1}-name-${b}`
+            const htmlPriceId = `meal-category-${a + 1}-price-${b}`
             const htmlDescriptionId = `meal-category-${a + 1}-meal-description-${b}`
 
-            const componentKey = `menu-compotent-${b}`
+            const componentKey = `menu-component-${b}`
             const nameKey = `meal-name-${b}`
             const priceKey = `meal-price-${b}`
             const ingredientKey = `meal-ingredients-${b}`
