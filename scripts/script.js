@@ -6,9 +6,9 @@ function showInformationsOnTheEntireMenu() {
     for (let a = 0; a < menu.length; a++) {
         for (let b = 1; b <= 4; b++) {
 
-            const htmlNameId = `meal-category-${a + 1}-meal-name-${a}`
-            const htmlPriceId = `meal-category-${a + 1}-meal-price-${a}`
-            const htmlDescriptionId = `meal-category-${a + 1}-meal-description-${a}`
+            const htmlNameId = `meal-category-${a + 1}-meal-name-${b}`
+            const htmlPriceId = `meal-category-${a + 1}-meal-price-${b}`
+            const htmlDescriptionId = `meal-category-${a + 1}-meal-description-${b}`
 
             const componentKey = `menu-compotent-${b}`
             const nameKey = `meal-name-${b}`
@@ -20,13 +20,11 @@ function showInformationsOnTheEntireMenu() {
             const descriptionElement = document.getElementById(htmlDescriptionId);
 
             const component = menu[a][componentKey];
-            if (!component) countinue;
+            if (!component) continue;
 
-            const name = component[nameKey];
-            const price = component[priceKey];
-            const ingredient = component[ingredientKey];
-
-
+            const nameData = component[nameKey];
+            const priceData = component[priceKey];
+            const ingredientData = component[ingredientKey];
 
             if (nameElement) nameElement.innerHTML = nameData || '';
             if (priceElement) priceElement.innerHTML = priceData || '';
