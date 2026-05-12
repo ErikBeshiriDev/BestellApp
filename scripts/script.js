@@ -3,28 +3,34 @@ function init() {
 };
 
 function showInformationsOnTheEntireMenu() {
-    showAllMenuNames();
-    showAllMenuPrices();
-    showAllMenuMealDescriptions();
-};
+    for (let a = 0; a < menu.length; a++) {
+        for (let b = 1; b <= 4; b++) {
 
-function showAllMenuNames() {
-    document.getElementById('meal-category-1-name-1').innerHTML = menu[0]['menu-component-1']['meal-name-1'];
-    document.getElementById('meal-category-1-name-2').innerHTML = menu[0]['menu-component-2']['meal-name-2'];
-    document.getElementById('meal-category-1-name-3').innerHTML = menu[0]['menu-component-3']['meal-name-3'];
-    document.getElementById('meal-category-1-name-4').innerHTML = menu[0]['menu-component-4']['meal-name-4'];
-};
+            const htmlNameId = `meal-category-${a + 1}-meal-name-${a}`
+            const htmlPriceId = `meal-category-${a + 1}-meal-price-${a}`
+            const htmlDescriptionId = `meal-category-${a + 1}-meal-description-${a}`
 
-function showAllMenuPrices() {
-    document.getElementById('meal-category-1-price-1').innerHTML = menu[0]['menu-component-1']['meal-price-1'];
-    document.getElementById('meal-category-1-price-2').innerHTML = menu[0]['menu-component-2']['meal-price-2'];
-    document.getElementById('meal-category-1-price-3').innerHTML = menu[0]['menu-component-3']['meal-price-3'];
-    document.getElementById('meal-category-1-price-4').innerHTML = menu[0]['menu-component-4']['meal-price-4'];
-};
+            const componentKey = `menu-compotent-${b}`
+            const nameKey = `meal-name-${b}`
+            const priceKey = `meal-price-${b}`
+            const ingredientKey = `meal-ingredients-${b}`
 
-function showAllMenuMealDescriptions() {
-    document.getElementById('meal-category-1-meal-description-1').innerHTML = menu[0]['menu-component-1']['meal-ingredients-1'];
-    document.getElementById('meal-category-1-meal-description-2').innerHTML = menu[0]['menu-component-2']['meal-ingredients-2'];
-    document.getElementById('meal-category-1-meal-description-3').innerHTML = menu[0]['menu-component-3']['meal-ingredients-3'];
-    document.getElementById('meal-category-1-meal-description-4').innerHTML = menu[0]['menu-component-4']['meal-ingredients-4'];
+            const nameElement = document.getElementById(htmlNameId);
+            const priceElement = document.getElementById(htmlPriceId);
+            const descriptionElement = document.getElementById(htmlDescriptionId);
+
+            const component = menu[a][componentKey];
+            if (!component) countinue;
+
+            const name = component[nameKey];
+            const price = component[priceKey];
+            const ingredient = component[ingredientKey];
+
+
+
+            if (nameElement) nameElement.innerHTML = nameData || '';
+            if (priceElement) priceElement.innerHTML = priceData || '';
+            if (descriptionElement) descriptionElement.innerHTML = ingredientData || '';
+        }
+    }
 };
