@@ -71,9 +71,10 @@ button {
 header {
     top: 0;
     height: 128px;
-    padding: 0px 114px;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* margin-bottom: 50px; */
     color: white;
@@ -81,6 +82,14 @@ header {
     background-color: #E76C1F;
     font-size: 30px;
     font-weight: 700;
+}
+
+.header_inner {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header,
