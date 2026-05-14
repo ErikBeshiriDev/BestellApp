@@ -37,3 +37,7 @@ function menuInsertingIntoTheIDs(a, b, context) {
     if (priceElement) priceElement.innerHTML = priceData || '';
     if (descriptionElement) descriptionElement.innerHTML = ingredientData || '';
 }
+
+function addToBasket() {
+    document.getElementById('addToBasket-1').innerHTML
+}
