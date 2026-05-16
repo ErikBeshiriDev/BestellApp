@@ -27,7 +27,7 @@ function allConstLines(a, b) {
 
 function menuInsertingIntoTheIDs(a, b, context) {
     const { componentKey, nameKey, priceKey, ingredientKey,
-    nameElement, priceElement, descriptionElement } = context;
+        nameElement, priceElement, descriptionElement } = context;
     const component = menu[a][componentKey];
     if (!component) return;
     const nameData = component[nameKey];
@@ -38,6 +38,8 @@ function menuInsertingIntoTheIDs(a, b, context) {
     if (descriptionElement) descriptionElement.innerHTML = ingredientData || '';
 }
 
-function addToBasket() {
-    document.getElementById('addToBasket-1').innerHTML
-}
+function addToBasket(element) {
+    const addedIntoTheBasket = 'Added 1';
+    element.innerHTML = addedIntoTheBasket;
+    element.classList.add('orange_text');
+};
