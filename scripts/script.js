@@ -36,10 +36,27 @@ function menuInsertingIntoTheIDs(a, b, context) {
     if (nameElement) nameElement.innerHTML = nameData || '';
     if (priceElement) priceElement.innerHTML = priceData || '';
     if (descriptionElement) descriptionElement.innerHTML = ingredientData || '';
-}
+};
 
 function addToBasket(element) {
     const addedIntoTheBasket = 'Added 1';
     element.innerHTML = addedIntoTheBasket;
     element.classList.add('orange_text');
+    newMenuBasketBox();
+};
+
+function newMenuBasketBox() {
+    let basketBox = document.getElementById('the-basket-list');
+    basketBox.innerHTML += `
+        <div class="item_in_the_basket" id="meal-basket-box">
+            <p class="meal_name">1 x Meal name</p>
+            <div class="number_and_price_of_individual_ordered_meals">
+                <div class="number_of_individual_ordered_meals">
+                    <img src="./img/png/delete.png" alt="">
+                    <p>1+</p>
+                </div>
+                <p class="price_of_individual_ordered_meals">Price€</p>
+            </div>
+        </div>
+    `
 };
