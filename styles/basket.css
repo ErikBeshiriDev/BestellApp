@@ -40,14 +40,15 @@
     .menu_selection_in_the_shopping_cart::-webkit-scrollbar {
         width: 6px;
         background-color: #726D6D;
+        height: 60px;
     }
 }
 
 .menu_selection_in_the_shopping_cart::-webkit-scrollbar-thumb {
     background-color: #E6E5E5;
-    border-top: 175px solid transparent;
-    border-bottom: 175px solid transparent;
-    background-clip: padding-box;
+    /* border-top: 175px solid transparent; */
+    /* border-bottom: 175px solid transparent; */
+    /* background-clip: padding-box; */
     border-radius: 30px;
 }
 
