@@ -48,11 +48,8 @@
     }
 }
 
-h3 {
-    color: #FFFFFF;
-}
-
 .your_basket_zone h3 {
+    color: #FFFFFF;
     font-size: 32px;
     font-weight: bold;
 }
