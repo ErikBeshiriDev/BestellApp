@@ -27,7 +27,7 @@ function allFirstConstLines(a, b) {
 
 function menuInsertingIntoTheIDs(a, b, context) {
     const { componentKey, nameKey, priceKey, ingredientKey,
-        nameElement, priceElement, descriptionElement }; = context;
+        nameElement, priceElement, descriptionElement } = context;
     const component = menu[a][componentKey];
     if (!component) return;
     const nameData = component[nameKey];
