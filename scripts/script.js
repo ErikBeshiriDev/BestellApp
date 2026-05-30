@@ -42,14 +42,14 @@ function addToBasket(element) {
     const buttonNumber = element.id.split('-').pop();
     const mealComponent = element.closest('.meal_component');
     const titleEls = mealComponent?.querySelectorAll('.meal_component_text_top h3');
-    const mealName = titleEls?.[0]?.textContent?.trim() || 'Meal Name';
+    const mealName = titleEls?.[0]?.textContent?.trim() || 'Meal name';
     const mealPrice = titleEls?.[1]?.textContent?.trim() || 'Price€';
     const basketItemId = `meal-basket-box-${buttonNumber}`;
     const countId = `meals-count-${buttonNumber}`;
 
     let addCount = Number(element.dataset.count || 0) + 1;
     element.dataset.count = addCount;
-    element.textContent = `Added ${count}`;
+    element.textContent = `Added ${addCount}`;
     element.classList.add('orange_text');
 
     const existingItem = document.getElementById(basketItemId);
@@ -61,12 +61,12 @@ function addToBasket(element) {
     addBasketItem(basketItemId, countId, mealName, mealPrice, addCount);
 };
 
-function addBasketItem(basketId, countId, mealName, mealPrice, count) {
+function addBasketItem(basketItemId, countId, mealName, mealPrice, count) {
     const basketBox = document.getElementById('the-basket-list');
     if (!basketBox) return;
 
-    basketBox.innerHTML.insertAdjacentHTML('beforeend', `
-        <div class="item_in_the_basket" id="${basketId}">
+    basketBox.insertAdjacentHTML('beforeend', `
+        <div class="item_in_the_basket" id="${basketItemId}">
             <p class="meal_name">${count} x ${mealName}</p>
             <div class="number_and_price_of_individual_ordered_meals">
                 <div class="number_of_individual_ordered_meals">
@@ -76,18 +76,18 @@ function addBasketItem(basketId, countId, mealName, mealPrice, count) {
                 <p class="price_of_individual_ordered_meals">${mealPrice}</p>
             </div>
         </div>
-    `)
+    `);
 };
 
 function updateBasketItem(basketItem, countId, count) {
     const countElement = document.getElementById(countId);
     if (countElement) {
-        countElement.textContent = `${count}+`
+        countElement.textContent = `${count}+`;
     };
 
     const mealNameElement = basketItem.querySelector('.meal_name');
     if (mealNameElement) {
-        const mealText = mealsNameElement.textContent.replace(/^[0-9]+ x\s*/, '');
+        const mealText = mealNameElement.textContent.replace(/^[0-9]+ x\s*/, '');
         mealNameElement.textContent = `${count} x ${mealText}`;
     };
 };
