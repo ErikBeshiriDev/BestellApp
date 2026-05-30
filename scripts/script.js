@@ -27,7 +27,7 @@ function allFirstConstLines(a, b) {
 
 function menuInsertingIntoTheIDs(a, b, context) {
     const { componentKey, nameKey, priceKey, ingredientKey,
-        nameElement, priceElement, descriptionElement } = context;
+        nameElement, priceElement, descriptionElement }; = context;
     const component = menu[a][componentKey];
     if (!component) return;
     const nameData = component[nameKey];
@@ -40,26 +40,54 @@ function menuInsertingIntoTheIDs(a, b, context) {
 
 function addToBasket(element) {
     const buttonNumber = element.id.split('-').pop();
-    let count = Number(element.dataset.count || 0);
-    count += 1;
-    element.dataset.count = count;
-    element.innerHTML = `Added ${count}`;
+    const mealComponent = element.closest('.meal_component');
+    const titleEls = mealComponent?.querySelectorAll('.meal_component_text_top h3');
+    const mealName = titleEls?.[0]?.textContent?.trim() || 'Meal Name';
+    const mealPrice = titleEls?.[1]?.textContent?.trim() || 'Price€';
+    const basketItemId = `meal-basket-box-${buttonNumber}`;
+    const countId = `meals-count-${buttonNumber}`;
+
+    let addCount = Number(element.dataset.count || 0) + 1;
+    element.dataset.count = addCount;
+    element.textContent = `Added ${count}`;
     element.classList.add('orange_text');
-    newMenuBasketBox(buttonNumber);
+
+    const existingItem = document.getElementById(basketItemId);
+    if (existingItem) {
+        updateBasketItem(existingItem, countId, addCount);
+        return;
+    };
+
+    addBasketItem(basketItemId, countId, mealName, mealPrice, addCount);
 };
 
-function newMenuBasketBox(buttonNumber) {
-    let basketBox = document.getElementById('the-basket-list');
-    basketBox.innerHTML += `
-        <div class="item_in_the_basket" id="meal-basket-box">
-            <p class="meal_name">1 x Meal name</p>
+function addBasketItem(basketId, countId, mealName, mealPrice, count) {
+    const basketBox = document.getElementById('the-basket-list');
+    if (!basketBox) return;
+
+    basketBox.innerHTML.insertAdjacentHTML('beforeend', `
+        <div class="item_in_the_basket" id="${basketId}">
+            <p class="meal_name">${count} x ${mealName}</p>
             <div class="number_and_price_of_individual_ordered_meals">
                 <div class="number_of_individual_ordered_meals">
                     <img src="./img/png/delete.png" alt="">
-                    <p>1+</p>
+                    <p id="${countId}">${count}+</p>
                 </div>
-                <p class="price_of_individual_ordered_meals">Price€</p>
+                <p class="price_of_individual_ordered_meals">${mealPrice}</p>
             </div>
         </div>
-    `
+    `)
+};
+
+function updateBasketItem(basketItem, countId, count) {
+    const countElement = document.getElementById(countId);
+    if (countElement) {
+        countElement.textContent = `${count}+`
+    };
+
+    const mealNameElement = basketItem.querySelector('.meal_name');
+    if (mealNameElement) {
+        const mealText = mealsNameElement.textContent.replace(/^[0-9]+ x\s*/, '');
+        mealNameElement.textContent = `${count} x ${mealText}`;
+    };
 };
