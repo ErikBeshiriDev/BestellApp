@@ -1,5 +1,6 @@
 function init() {
     showInformationsOnTheEntireMenu();
+    setupDeleteMealBasketBox();
 };
 
 function showInformationsOnTheEntireMenu() {
@@ -70,7 +71,7 @@ function addBasketItem(basketItemId, countId, mealName, mealPrice, count) {
             <p class="meal_name">${count} x ${mealName}</p>
             <div class="number_and_price_of_individual_ordered_meals">
                 <div class="number_of_individual_ordered_meals">
-                    <img src="./img/png/delete.png" alt="">
+                    <img src="./img/png/delete.png" class="delete-button" alt="">
                     <p id="${countId}">${count}+</p>
                 </div>
                 <p class="price_of_individual_ordered_meals">${mealPrice}</p>
@@ -90,4 +91,20 @@ function updateBasketItem(basketItem, countId, count) {
         const mealText = mealNameElement.textContent.replace(/^[0-9]+ x\s*/, '');
         mealNameElement.textContent = `${count} x ${mealText}`;
     };
+};
+
+function setupDeleteMealBasketBox() {
+    const basketBox = document.getElementById('the-basket-list');
+    if (!basketBox) return;
+    basketBox.onclick = basketBoxRemove;
+
+    function basketBoxRemove(event) {
+        const target = event.target;
+        if (target.classList.contains('delete-button')) {
+            const item = target.closest('.item_in_the_basket');
+            if (item) {
+                item.remove();
+            }
+        }
+    }
 };
