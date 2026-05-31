@@ -102,9 +102,21 @@ function setupDeleteMealBasketBox() {
         const target = event.target;
         if (target.classList.contains('delete-button')) {
             const item = target.closest('.item_in_the_basket');
-            if (item) {
-                item.remove();
+            if (!item) return;
+
+            const match = item.id.match(/^meal-basket-box-(\d+)$/);
+            if (match) {
+                const buttonNumber = match[1];
+                const addToBasketButton = document.getElementById(`add-to-basket-${buttonNumber}`);
+                if (addToBasketButton) {
+                    addToBasketButton.disabled = false;
+                    addToBasketButton.dataset.count = 0;
+                    addToBasketButton.textContent = 'Add to basket';
+                    addToBasketButton.classList.remove('orange_text');
+                }
             }
+
+            item.remove();
         }
     }
 };
