@@ -42,9 +42,9 @@ function menuInsertingIntoTheIDs(a, b, context) {
 function addToBasket(element) {
     const buttonNumber = element.id.split('-').pop();
     const mealComponent = element.closest('.meal_component');
-    const titleEls = mealComponent?.querySelectorAll('.meal_component_text_top h3');
-    const mealName = titleEls?.[0]?.textContent?.trim() || 'Meal name';
-    const mealPrice = titleEls?.[1]?.textContent?.trim() || 'Price€';
+    const mealHeadings = mealComponent?.querySelectorAll('.meal_component_text_top h3');
+    const mealName = mealHeadings?.[0]?.textContent?.trim() || 'Meal name';
+    const mealPrice = mealHeadings?.[1]?.textContent?.trim() || 'Price€';
     const basketItemId = `meal-basket-box-${buttonNumber}`;
     const countId = `meals-count-${buttonNumber}`;
 
