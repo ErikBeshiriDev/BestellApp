@@ -80,6 +80,25 @@ function addBasketItem(basketItemId, countId, mealName, mealPrice, count) {
     `);
 };
 
+function subtotalAndTotalPrice(basketItemId, countId, mealName, mealPrice, count) {
+    const subtotalPrice = document.getElementById('subtotal');
+    if (!subtotalPrice) return;
+
+    const basketBox = document.getElementById('the-basket-list');
+    if (!basketBox) return;
+
+    let pricesSum = 0;
+    let sumArray = [mealPrice];
+    mealPrice.replace((mealPrice));
+    parseFloat(sumArray);
+    function subtotalSum(mealPrice) {
+        for (let arrayIndex = 0; arrayIndex < sumArray.length; arrayIndex++) {
+            pricesSum += sumArray[arrayIndex];
+        }
+    };
+    return subtotalSum + '€';
+};
+
 function updateBasketItem(basketItem, countId, count) {
     const countElement = document.getElementById(countId);
     if (countElement) {
