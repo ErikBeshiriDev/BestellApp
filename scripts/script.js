@@ -71,7 +71,7 @@ function addBasketItem(basketItemId, countId, mealName, mealPrice, count) {
             <p class="meal_name">${count} x ${mealName}</p>
             <div class="number_and_price_of_individual_ordered_meals">
                 <div class="number_of_individual_ordered_meals">
-                    <img src="./img/png/delete.png" class="delete-button" alt="">
+                    <img src="./img/png/delete.png" alt="">
                     <p id="${countId}">${count}+</p>
                 </div>
                 <p class="price_of_individual_ordered_meals">${mealPrice}</p>
@@ -100,7 +100,7 @@ function setupDeleteMealBasketBox() {
 
     function basketBoxRemove(event) {
         const target = event.target;
-        if (target.classList.contains('delete-button')) {
+        if (target.tagName === 'IMG') {
             const item = target.closest('.item_in_the_basket');
             if (!item) return;
 
