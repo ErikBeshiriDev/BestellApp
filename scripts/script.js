@@ -55,9 +55,9 @@ function addToBasket(element) {
 
     const existingItem = document.getElementById(basketItemId);
     if (existingItem) {
-        updateBasketItem(existingItem, countId, addCount);
+        updateBasketItem(existingItem, countId, mealPrice, addCount);
         return;
-    };
+    }
 
     addBasketItem(basketItemId, countId, mealName, mealPrice, addCount);
 };
@@ -80,37 +80,54 @@ function addBasketItem(basketItemId, countId, mealName, mealPrice, count) {
     `);
 };
 
-function subtotalAndTotalPrice(basketItemId, countId, mealName, mealPrice, count) {
-    const subtotalPrice = document.getElementById('subtotal');
-    if (!subtotalPrice) return;
+// function subtotalAndTotalPrice(basketItemId, countId, mealName, mealPrice, count) {
+//     const subtotalPrice = document.getElementById('subtotal');
+//     if (!subtotalPrice) return;
 
-    const basketBox = document.getElementById('the-basket-list');
-    if (!basketBox) return;
+//     const basketBox = document.getElementById('the-basket-list');
+//     if (!basketBox) return;
 
-    let pricesSum = 0;
-    let sumArray = [mealPrice];
-    mealPrice.replace((mealPrice));
-    parseFloat(sumArray);
-    function subtotalSum(mealPrice) {
-        for (let arrayIndex = 0; arrayIndex < sumArray.length; arrayIndex++) {
-            pricesSum += sumArray[arrayIndex];
-        }
-    };
-    return subtotalSum + '€';
-};
+//     let pricesSum = 0;
+//     let sumArray = [mealPrice];
+//     mealPrice.replace((mealPrice));
+//     parseFloat(sumArray);
+//     function subtotalSum(mealPrice) {
+//         for (let arrayIndex = 0; arrayIndex < sumArray.length; arrayIndex++) {
+//             pricesSum += sumArray[arrayIndex];
+//         }
+//     };
+//     return subtotalSum + '€';
+// };
 
-function updateBasketItem(basketItem, countId, count) {
+function updateBasketItem(basketItem, countId, mealPrice, count) {
     const countElement = document.getElementById(countId);
     if (countElement) {
         countElement.textContent = `${count}+`;
-    };
+    }
 
     const mealNameElement = basketItem.querySelector('.meal_name');
     if (mealNameElement) {
         const mealText = mealNameElement.textContent.replace(/^[0-9]+ x\s*/, '');
         mealNameElement.textContent = `${count} x ${mealText}`;
-    };
-};
+    }
+
+    const mealPriceElement = basketItem.querySelector('.price_of_individual_ordered_meals');
+    if (mealPriceElement) {
+        const unitPrice = parsePrice(mealPrice);
+        const totalPrice = unitPrice * count;
+        mealPriceElement.textContent = formatPrice(totalPrice);
+    }
+}
+
+function parsePrice(priceString) {
+    const normalized = String(priceString).replace(/[, ]+/g, '.').replace(/[^\d.]/g, '');
+    return Number(normalized) || 0;
+}
+
+function formatPrice(value) {
+    return value.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
+}
+
 
 function setupDeleteMealBasketBox() {
     const basketBox = document.getElementById('the-basket-list');
@@ -134,7 +151,6 @@ function setupDeleteMealBasketBox() {
                     addToBasketButton.classList.remove('orange_text');
                 }
             }
-
             item.remove();
         }
     }
