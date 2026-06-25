@@ -66,6 +66,9 @@ function addBasketItem(basketItemId, countId, mealName, mealPrice, count) {
     const basketBox = document.getElementById('the-basket-list');
     if (!basketBox) return;
 
+    const unitPrice = parsePrice(mealPrice);
+    const totalPrice = unitPrice * count;
+
     basketBox.insertAdjacentHTML('beforeend', `
         <div class="item_in_the_basket" id="${basketItemId}">
             <p class="meal_name">${count} x ${mealName}</p>
@@ -74,10 +77,12 @@ function addBasketItem(basketItemId, countId, mealName, mealPrice, count) {
                     <img src="./img/png/delete.png" alt="">
                     <p id="${countId}">${count}+</p>
                 </div>
-                <p class="price_of_individual_ordered_meals">${mealPrice}</p>
+                <p class="price_of_individual_ordered_meals">${formatPrice(totalPrice)}</p>
             </div>
         </div>
     `);
+
+    updateBasketTotals();
 };
 
 function updateBasketItem(basketItem, countId, mealPrice, count) {
@@ -98,6 +103,8 @@ function updateBasketItem(basketItem, countId, mealPrice, count) {
         const totalPrice = unitPrice * count;
         mealPriceElement.textContent = formatPrice(totalPrice);
     }
+
+    updateBasketTotals();
 }
 
 function parsePrice(priceString) {
@@ -107,6 +114,41 @@ function parsePrice(priceString) {
 
 function formatPrice(value) {
     return value.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
+}
+
+function updateBasketTotals() {
+    const basketBox = document.getElementById('the-basket-list');
+    if (!basketBox) return;
+
+    const subtotalElement = document.getElementById('subtotal');
+    const totalElement = document.getElementById('total');
+    const buyNowButton = document.getElementById('buy-now-button');
+    const deliveryFeeElement = document.getElementById('delivery-fee');
+
+    const deliveryFee = deliveryFeeElement ? parsePrice(deliveryFeeElement.textContent) : 0;
+    const basketItems = basketBox.querySelectorAll('.item_in_the_basket');
+
+    let subtotal = 0;
+    basketItems.forEach(item => {
+        const priceElement = item.querySelector('.price_of_individual_ordered_meals');
+        if (!priceElement) return;
+        subtotal += parsePrice(priceElement.textContent);
+    });
+
+    if (subtotalElement) {
+        subtotalElement.textContent = formatPrice(subtotal);
+    }
+
+    const total = subtotal + deliveryFee;
+    const totalText = `Buy now (${formatPrice(total)})`;
+
+    if (totalElement) {
+        totalElement.textContent = totalText;
+    }
+
+    if (buyNowButton) {
+        buyNowButton.textContent = totalText;
+    }
 }
 
 function setupDeleteMealBasketBox() {
