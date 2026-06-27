@@ -19,7 +19,6 @@
 }
 
 @media (max-width: 1300px) {
-
     .your_basket_zone {
         display: none !important;
     }
@@ -43,7 +42,6 @@
 }
 
 @media (max-width: 950px) {
-
     .meal_categorys_menu_1,
     .meal_categorys_menu_2_and_3 {
         width: auto;
@@ -95,6 +93,11 @@
 }
 
 @media (max-width: 550px) {
+    .header_inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     footer {
         flex-direction: column;
         gap: 25px;
@@ -102,7 +105,6 @@
 }
 
 @media (max-width: 300px) {
-
     .meal_component {
         display: flex;
         flex-direction: column;
@@ -124,7 +126,6 @@
 }
 
 @media (max-width: 175px) {
-
     .meal_component {
         width: 70px;
         padding: 10px;
