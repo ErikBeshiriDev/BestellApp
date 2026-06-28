@@ -1,3 +1,11 @@
+/* .active_basket_content {
+    display: none;
+}
+
+.your_basket_zone.aktive .inactive_basket_content {
+    display: block;
+} */
+
 .your_basket_zone {
     font-family: "Palanquin";
     background-color: #726D6D;
@@ -27,8 +35,6 @@
     padding: 50px 0;
     gap: 50px;
 }
-
-
 
 .menu_selection_in_the_shopping_cart {
     height: 410px;
