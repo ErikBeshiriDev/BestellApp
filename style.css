@@ -23,6 +23,7 @@
     align-items: center;
     position: relative;
     top: 50px;
+    margin-bottom: 50px;
 }
 
 .hero_profile_images {
@@ -93,9 +94,9 @@
 .headline_inner {
     font-size: 40px;
     font-weight: 700;
-    font-style: Bold;
-    text-align: center;
+    font-style: bold;
     align-items: end;
+    text-align: center;
     width: 100%;
     max-width: 1440px;
     height: 60px;
