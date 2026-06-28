@@ -86,29 +86,28 @@
 .burger_headline {
     width: 100%;
     height: 60px;
-    position: relative;
     background-color: #e76c1f;
     color: white;
 }
 
 .headline_inner {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: Bold;
+    text-align: center;
+    align-items: end;
     width: 100%;
     max-width: 1440px;
     height: 60px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    padding-left: 300px;
+    padding-left: 150px;
     gap: 15px;
 }
 
 .headline_inner img {
-    height: 30px;
-    width: auto;
-
     width: 88px;
     height: 91px;
-    z-index: 100px;
 }
 
 .burger_headline_margin_top {
