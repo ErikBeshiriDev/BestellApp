@@ -113,3 +113,12 @@ function setupDeleteMealBasketBox() {
         }
     }
 };
+
+function switchToggleState() {
+    const toggleState = document.getElementById('the-basket-box');
+    if (toggleState.contains('inactive_basket_content')) {
+        toggleState.replace('inactive_basket_content', 'active_basket_content')
+    } else {
+        toggleState.replace('active_basket_content', 'inactive_basket_content')
+    }
+}
