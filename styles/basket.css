@@ -3,11 +3,11 @@ display: none;
 }
 
 .your_basket_zone .inactive_basket_content {
-display: block;
+display: flex;
 }
 
 .your_basket_zone.aktiv .active_basket_content {
-display: block;
+display: flex;
 }
 
 .your_basket_zone.aktiv .inactive_basket_content {
