@@ -53,6 +53,11 @@ function addToBasket(element) {
     element.textContent = `Added ${addCount}`;
     element.classList.add('orange_text');
 
+    const basketZone = document.querySelector('.your_basket_zone');
+    if (!basketZone.classList.contains('aktiv')) {
+        basketZone.classList.add('aktiv');
+    }
+
     const existingItem = document.getElementById(basketItemId);
     if (existingItem) {
         updateBasketItem(existingItem, countId, mealPrice, addCount);
