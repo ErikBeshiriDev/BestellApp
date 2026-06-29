@@ -56,11 +56,6 @@
         width: 6px;
         background-color: #726D6D;
     }
-
-    .menu_selection_in_the_shopping_cart::-webkit-scrollbar:horizontal {
-        height: 0px;
-        width: 0px;
-    }
 }
 
 .menu_selection_in_the_shopping_cart::-webkit-scrollbar-thumb {
@@ -73,6 +68,8 @@
 
 .menu_selection_in_the_shopping_cart::-webkit-scrollbar-button {
     display: none !important;
+    height: 6px;
+    width: 6px;
 }
 
 @supports not selector(::-webkit-scrollbar) {
