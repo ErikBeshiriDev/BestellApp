@@ -106,6 +106,22 @@
 }
 
 @media (max-width: 1079px) {
+    /* .meal_component {
+        display: flex;
+        flex-direction: row;
+        height: 125px;
+        width: 713px;
+        padding: 15px;
+        gap: 10px;
+        border-radius: 12px;
+        background-color: #FDEADC;
+    } */
+
+    .meal_component {
+        min-width: 400px;
+        max-width: 600px;
+    }
+
     .meal_component_text {
         width: 100%;
         display: flex;
@@ -156,64 +172,64 @@
         font-size: 12px;
         font-weight: 300;
         /* overflow-clip-margin: unset; */
-        overflow: visible;
-        color: #363534;
-        display: flex;
-    }
+    overflow: visible;
+    color: #363534;
+    display: flex;
+}
 
-    .price_of_individual_ordered_meals {
-        font-size: 11px;
-        font-weight: 400;
-        align-items: flex-end;
-    }
+.price_of_individual_ordered_meals {
+    font-size: 11px;
+    font-weight: 400;
+    align-items: flex-end;
+}
 
-    .total_price_zone {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 340px;
-        gap: 15px;
-    }
+.total_price_zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+    gap: 15px;
+}
 
-    .total_price_zone_above_the_dividing_line {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        font-size: 20px;
-        font-weight: 600;
-        gap: 8px;
-    }
+.total_price_zone_above_the_dividing_line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 8px;
+}
 
-    .total_price_zone button {
-        width: 50%;
-        font-size: 4px;
-        font-weight: 100;
-        padding: 5px;
-    }
+.total_price_zone button {
+    width: 50%;
+    font-size: 4px;
+    font-weight: 100;
+    padding: 5px;
+}
 
-    .total_price_zone_the_text {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        color: #FFFFFF;
-        gap: 5px;
-    }
+.total_price_zone_the_text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FFFFFF;
+    gap: 5px;
+}
 
-    .total_price_zone_the_dividing_line {
-        display: flex;
-        height: 3px;
-        width: 100%;
-        background-color: #FFFFFF;
-        border-radius: 3px;
-        border-width: 2px;
-    }
+.total_price_zone_the_dividing_line {
+    display: flex;
+    height: 3px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    border-width: 2px;
+}
 
-    .total_price_zone_under_the_dividing_line {
-        font-size: 22px;
-        font-weight: 700;
-        display: flex;
-        justify-content: start;
-    }
+.total_price_zone_under_the_dividing_line {
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: start;
+}
 }
