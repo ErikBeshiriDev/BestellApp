@@ -12,137 +12,57 @@
     gap: 72px;
 }
 
-@media (min-width: 1301px) {
+/* @media (min-width: 1301px) {
     .responsive_navigation {
         display: none;
     }
-}
+} */
 
-@media (max-width: 1300px) {
-    
-    .headline_inner {
-        justify-content: center;
-        text-align: center;
-        padding-left: 0px;
+@media (max-width: 1289px) {
+    .menu_selection_in_the_shopping_cart {
+        height: 410px;
+        width: 80%;
+        overflow-y: scroll;
+        overflow-x: clip;
+        overflow-x: scroll;
     }
 
-    .your_basket_zone {
-        display: none !important;
+    .meal_categorys_menu_1 {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        /* position: fixed; */
+        padding-left: 200px;
+        gap: 16px;
     }
 
-    .content_wrapper_version_1 {
-        display: contents;
-        padding: 0;
-        margin: 0;
-        height: auto;
-    }
-
-    .meal_categorys_menu_1,
     .meal_categorys_menu_2_and_3 {
-        width: min-content;
+        width: 100%;
+        max-width: 1440px;
         display: flex;
         flex-direction: column;
-        padding-left: 0;
-        padding: 0 calc(max(100px, (100% - 1300px) / 2));
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 700px) {
-
-    .meal_categorys_menu_1,
-    .meal_categorys_menu_2_and_3 {
-        width: auto;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        margin: auto;
+        /* position: fixed; */
+        padding-left: 200px;
+        gap: 16px;
     }
 
-    .meal_component {
+    .total_price_zone {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 300px;
-        width: 250px;
-        padding: 15px;
-        gap: 10px;
-        border-radius: 12px;
-        background-color: #FDEADC;
+        /* max-width: 340px; */
+        width: 50%;
+        /* gap: 15px; */
     }
 
-    .meal_component_text_top {
-        margin: 20px 0;
-    }
-
-    .meal_component_button {
-        align-self: center;
-        margin: 20px 0;
-    }
-}
-
-@media (max-width: 550px) {
-    .responsive_navigation {
-        height: 250px;
-        max-width: auto;
-        background-color: #363534;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .responsive_box {
-        height: 400px;
-        flex-direction: column;
-        justify-content: center;
-        gap: 25px;
-    }
-}
-
-@media (max-width: 550px) {
-    .header_inner {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 25px;
-    }
-}
-
-@media (max-width: 300px) {
-    .meal_component {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 400px;
-        width: 125px;
-        padding: 15px;
-        gap: 10px;
-        border-radius: 12px;
-        background-color: #FDEADC;
-    }
-
-    .meal_component_text_top {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 175px) {
-    .meal_component {
-        width: 70px;
-        padding: 10px;
-        background-color: #FDEADC;
-    }
-
-    .meal_component_text_top {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    .total_price_zone button {
+        /* width: 320px; */
+        width: 50%;
+        /* color: #FFFFFF; */
+        /* background-color: #E76C1F; */
+        /* font-size: 32px; */
+        /* font-weight: 700; */
+        /* border-radius: 60px; */
+        /* padding: 10px; */
     }
 }

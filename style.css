@@ -134,7 +134,7 @@
 
 .meal_categorys_menu_1 {
     width: 100%;
-    /* max-width: 1440px; */
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     padding-left: calc(max(100px,(100% - 1400px) / 2));
