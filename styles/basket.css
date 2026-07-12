@@ -88,7 +88,7 @@
 .item_in_the_basket {
     background-color: #FFFFFF;
     color: #726D6D;
-    min-height: 103px;
+    min-height: 105px;
     max-width: 340px;
     display: flex;
     flex-direction: column;
