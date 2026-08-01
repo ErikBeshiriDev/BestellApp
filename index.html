@@ -113,38 +113,40 @@
                     </div>
                 </div>
 
-                <section id="the-basket-box" class="your_basket_zone">
-                    <div class="inactive_basket_content">
-                        <h3>Your basket</h3>
+                <dialog class="basket_dialog" id="basket-dialog">
+                    <section id="the-basket-box" class="your_basket_zone">
+                        <div class="inactive_basket_content">
+                            <h3>Your basket</h3>
 
-                        <p>Nothing here yet. <br> Go ahead and choose something delicious!</p>
+                            <p>Nothing here yet. <br> Go ahead and choose something delicious!</p>
 
-                        <img src="./img/png/big_shopping_cart.png" alt="shopping card on the basket">
-                    </div>
-
-                    <div class="active_basket_content">
-                        <h3>Your Basket</h3>
-                        <div class="menu_selection_in_the_shopping_cart" id="the-basket-list"></div>
-                        <div class="total_price_zone">
-                            <div class="total_price_zone_above_the_dividing_line">
-                                <div class="total_price_zone_the_text">
-                                    <p>Subtotal</p>
-                                    <p id="subtotal">0,00</p>
-                                </div>
-                                <div class="total_price_zone_the_text">
-                                    <p>Delivery fee</p>
-                                    <p id="delivery-fee">4,99€</p>
-                                </div>
-                            </div>
-                            <div class="total_price_zone_the_dividing_line"></div>
-                            <div class="total_price_zone_the_text total_price_zone_under_the_dividing_line">
-                                <p>Total</p>
-                                <p id="total">Buy now (0,00€)</p>
-                            </div>
-                            <button id="buy-now-button">Buy now (0,00€)</button>
+                            <img src="./img/png/big_shopping_cart.png" alt="shopping card on the basket">
                         </div>
-                    </div>
-                </section>
+
+                        <div class="active_basket_content">
+                            <h3>Your Basket</h3>
+                            <div class="menu_selection_in_the_shopping_cart" id="the-basket-list"></div>
+                            <div class="total_price_zone">
+                                <div class="total_price_zone_above_the_dividing_line">
+                                    <div class="total_price_zone_the_text">
+                                        <p>Subtotal</p>
+                                        <p id="subtotal">0,00</p>
+                                    </div>
+                                    <div class="total_price_zone_the_text">
+                                        <p>Delivery fee</p>
+                                        <p id="delivery-fee">4,99€</p>
+                                    </div>
+                                </div>
+                                <div class="total_price_zone_the_dividing_line"></div>
+                                <div class="total_price_zone_the_text total_price_zone_under_the_dividing_line">
+                                    <p>Total</p>
+                                    <p id="total">Buy now (0,00€)</p>
+                                </div>
+                                <button id="buy-now-button">Buy now (0,00€)</button>
+                            </div>
+                        </div>
+                    </section>
+                </dialog>
             </div>
 
             <div class="burger_headline burger_headline_margin_top burger_headline_margin_bottom">
@@ -281,17 +283,6 @@
         </section>
     </main>
 
-    <!-- <section class="dialog">
-        <div class="order_confirmed_box">
-            <button class="close_button">&#x2715;</button>
-            <img src="./img/png/ChatGPT Image Nov 24, 2025, 11_51_33 AM 1.png" alt="">
-            <div class="order_confirmed_box_text_zone">
-                <p class="order_confirmed_box_text_zone_line_1">Order confirmed!</p>
-                <p class="order_confirmed_box_text_zone_line_2">Your food is on the way!</p>
-            </div>
-        </div>
-    </section> -->
-
     <footer>
         <div class="footer_copyright_text">
             <img src="./img/png/copyright.png" alt="">
@@ -306,11 +297,12 @@
             <img src="./img/navigation-icons/inactive-home.png" alt="inactive home">
             <img src="./img/navigation-icons/inactive-profile.png" alt="inactive profile">
             <img src="./img/navigation-icons/inactive-menu.png" alt="inactive menu">
-            <img src="./img/navigation-icons/inactive-shopping-cart.png" alt="inactive shopping cart">
+            <img src="./img/navigation-icons/inactive-shopping-cart.png" onclick="showDialog()" alt="inactive shopping cart">
         </div>
     </section>
 
 </body>
+<script src="./scripts/dialog.js"></script>
 <script src="./scripts/script.js"></script>
 <script src="./scripts/basket.js"></script>
 
