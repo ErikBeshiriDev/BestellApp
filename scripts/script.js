@@ -1,6 +1,7 @@
 function init() {
     showInformationsOnTheEntireMenu();
     setupDeleteMealBasketBox();
+    initLS();
 };
 
 function showInformationsOnTheEntireMenu() {
