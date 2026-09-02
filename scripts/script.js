@@ -49,21 +49,21 @@ function addToBasket(element) {
     const basketItemId = `meal-basket-box-${buttonNumber}`;
     const countId = `meals-count-${buttonNumber}`;
 
-    let addCount = Number(element.dataset.count || 0) + 1;
-    element.dataset.count = addCount;
-    element.textContent = `Added ${addCount}`;
+    const nextCount = Number(element.dataset.count || 0) + 1;
+    element.dataset.count = nextCount;
+    element.textContent = `Added ${nextCount}`;
     element.classList.add('orange_text');
 
     const basketZone = document.querySelector('.your_basket_zone');
-    if (!basketZone.classList.contains('aktiv')) {
+    if (basketZone && !basketZone.classList.contains('aktiv')) {
         basketZone.classList.add('aktiv');
     }
 
-    const existingItem = document.getElementById(basketItemId);
-    if (existingItem) {
-        updateBasketItem(existingItem, countId, mealPrice, addCount);
-        return;
-    }
-
-    addBasketItem(basketItemId, countId, mealName, mealPrice, addCount);
+    onClickAddToBasket({
+        basketItemId,
+        countId,
+        mealName,
+        mealPrice,
+        addCount: 1
+    });
 };

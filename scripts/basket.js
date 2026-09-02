@@ -108,8 +108,15 @@ function setupDeleteMealBasketBox() {
                     addToBasketButton.textContent = 'Add to basket';
                     addToBasketButton.classList.remove('orange_text');
                 }
+
+                const basketIndex = basket.findIndex(entry => entry.basketItemId === item.id);
+                if (basketIndex >= 0) {
+                    basket.splice(basketIndex, 1);
+                    saveToLocalStorage();
+                }
             }
             item.remove();
+            updateBasketTotals();
         }
     }
 };
