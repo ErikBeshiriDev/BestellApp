@@ -98,7 +98,7 @@ function addRegisterItemSelection(event, params) {
         basketItemId: `meal-basket-box-${itemId}`,
         countId: `meals-count-${itemId}`,
         mealName: button.dataset.name,
-        mealPrice: Number(button.dataset.price),
+        mealPrice: parsePrice(button.dataset.price),
         addCount: countValue
     };
 
