@@ -137,11 +137,11 @@
     }
 }
 
-@media (min-width: 884px) {
+/*@media (min-width: 884px) {
     .responsive_navigation {
         display: none;
     }
-}
+}*/
 
 @media (max-width: 884px) {
     .your_basket_zone {
